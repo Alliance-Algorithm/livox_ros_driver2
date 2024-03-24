@@ -1,3 +1,6 @@
+set(ROS_EDITION "ROS2")
+set(HUMBLE_ROS "humble")
+
 # judge which cmake codes to use 
 if(ROS_EDITION STREQUAL "ROS1")
 
@@ -330,7 +333,7 @@ else(ROS_EDITION STREQUAL "ROS2")
 
   ament_auto_package(INSTALL_TO_SHARE
     config
-    launch_ROS2
+    launch
   )
 
 endif()
